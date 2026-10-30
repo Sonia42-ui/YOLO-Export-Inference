@@ -1,0 +1,14 @@
+# 运行本仓库所需的依赖
+# 安装： pip install -r requirements.txt
+
+ultralytics>=8.4          # 模型加载 / 导出 / 推理
+torch>=2.0                # .pt 模型推理（ultralytics 依赖）
+torchvision>=0.15
+opencv-python>=4.8        # 读视频、画框、写视频
+numpy>=1.24
+
+onnx>=1.12                # ONNX 模型格式与校验
+onnxruntime>=1.15         # 运行 .onnx 模型
+onnxslim>=0.1.82          # 导出时精简计算图
+
+imageio-ffmpeg>=0.4.9     # 结果视频 H.264 编码（自带 ffmpeg，不用另装）
